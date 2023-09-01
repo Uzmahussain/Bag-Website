@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Container {
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 28px;
+            margin: 0 28px;
+            box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.256);
+            width: 60%;
+            margin: auto;
+        }
+
+    
+        .head-text {
+            color: rgba(0, 0, 0, 0.756);
+            background-color: rgba(127, 159, 255, 0.433);
+            text-align: center;
+            padding: 1em;
+            letter-spacing: 2px;
+        }
+
+        .main-user-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0px;
+        }
+
+        .user-input-box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 48%;
+            padding-bottom: 15px;
+        }
+        
+        .user-input-box input {
+            height: 40px;
+            width: 95%;
+            border-radius: 3px;
+            outline: none;
+            border: 1px solid grey;
+            padding: 0 10px;
+        }
+        
+        .submit_btn input {
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            padding: 10px;
+            background-color: rgba(249, 145, 0, 0.778);
+            border: none;
+            border-radius: 3px;
+        }
+        
+        .submit_btn input:hover{
+            background-color:rgb(249, 145, 0) ;
+        }
+
+        @media(max-width:810px) {
+            .Container {
+                min-width: 280px;
+            }
+
+            .user-input-box{
+                margin-bottom: 12px;
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="Container">
+        <h3 class="head-text">Checkout Form</h3>
+
+        <form action="#">
+            <div class="main-user-info">
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="First Name">
+                </div>
+
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <div class="user-input-box">
+                    <input type="number" value="number" placeholder="Enter Your Mobile Number" class="num">
+                </div>
+
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="Enter Your Email Id">
+                </div>
+
+
+                <div class="user-input-box">
+                    <input type="password" placeholder="Enter Your Password">
+                </div>
+
+
+                <div class="user-input-box">
+                    <input type="password" placeholder="Confirm Your Password">
+                </div>
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="Pincode">
+                </div>
+
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="City">
+                </div>
+
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="State">
+                </div>
+
+                <div class="user-input-box">
+                    <input type="text" placeholder=" House No., Building Name,(Required)*" class="address1">
+                </div>
+
+                <div class="user-input-box">
+                    <input type="text" placeholder="Road Name, Area, Colony, (Required)*" class="address2">
+                </div>
+
+            </div>
+
+            <div class="submit_btn">
+                <input type="submit" value="SAVE  ADDRESS">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
